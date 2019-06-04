@@ -1,23 +1,20 @@
 <template>
-  <div class="hello">
-    <h2>{{bg}}</h2>
-    <button :style="styling" >Success</button>
-  </div>
+    <div class="buttonContainer" :style="styling" >
+      <img :src="img" />
+    </div>
 </template>
 
 <script>
 
 export default {
-  name: 'Hello',
   props:{
-      msg:String,
       bg: String,
       img:String
   },
   computed: {
       styling: function(){
           return{
-              background:this.bg
+              'background-color':this.bg
           }
       }
   } 
@@ -33,9 +30,15 @@ h1, h2 {
   font-weight: normal;
 }
 
-button{
-    color:black;
-    border:none;
+.buttonContainer{
+  padding-top: 4px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+img{
+  width: 25px;
+  height: 24px;
 }
 
 </style>

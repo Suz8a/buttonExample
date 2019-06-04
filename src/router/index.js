@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Other from '../components/Other'
+import MyButton from '../components/MyButton'
+import App from '../App'
 
 Vue.use(Router)
 
@@ -8,8 +9,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Other',
-      component: Other
+      name: 'App',
+      component: App
     }
   ]
 })

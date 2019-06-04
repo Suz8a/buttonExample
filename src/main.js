@@ -3,13 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import Other from './components/Other'
+import MyButton from './components/MyButton'
 
 
 new Vue({
   el: '#app',
-  router,
-  components: { Other }
+  template:'<App/>',
+  components: { App }
 })
 
 
