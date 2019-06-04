@@ -5,6 +5,7 @@
 </template>
 
 <script>
+//import rubbish from '../assets/icons/rubbish-bin.png'
 
 export default {
   props:{
