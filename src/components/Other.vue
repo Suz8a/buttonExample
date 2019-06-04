@@ -1,8 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <button :style="styling" >Success</button>
     <h2>{{bg}}</h2>
+    <button :style="styling" >Success</button>
   </div>
 </template>
 
@@ -12,7 +11,8 @@ export default {
   name: 'Hello',
   props:{
       msg:String,
-      bg: String
+      bg: String,
+      img:String
   },
   computed: {
       styling: function(){

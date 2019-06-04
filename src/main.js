@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Other from './components/Other'
 
+
 new Vue({
   el: '#app',
   router,
